@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class Mymain{
+public class Main{
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
         ArrayList<Names> names = new ArrayList<Names>();
@@ -20,10 +20,10 @@ public class Mymain{
                             }
                         }else if(obj == 0){
                             scan.close();
-                            throw new ExceptionS("Zero is not valid to input");
+                            throw new ExceptionS("Not a valid to input");
                         }else{
                             scan.close();
-                            throw new ExceptionS("Negative Variable is not allowed");
+                            throw new ExceptionS("It's negative.");
                         }
                 }catch(ExceptionS e){
                     System.out.println(e.getMessage());
